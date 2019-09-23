@@ -24,7 +24,7 @@ as well as in laboratory settings
 -	Data-transfer to external devices, such as personal computers
  
 
-![My image](https://github.com/peterloes/Scales/blob/master/1_Getting_Started_Tutorial/2_Electronic_board.jpg)
+![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/2_Electronic_board.jpg)
 
 - Time Synchronization onces a day
 - Application Current Control twice a day
@@ -33,9 +33,9 @@ as well as in laboratory settings
 - Hyperterminal Output, to get real-time data.
 - Low-Power Device: 
 
-![My image](https://github.com/peterloes/Scales/blob/master/1_Getting_Started_Tutorial/1_weigh_cell_rfid.JPG)
+![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_Prototyp_Feeder.jpg)
 
-Weigh cell on Feeder
+Prototype: Weigh cell on Feeder
 
 The Scales features EFM32 ...the world´s most energy friendly microcontrollers
 
