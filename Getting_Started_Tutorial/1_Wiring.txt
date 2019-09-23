@@ -1,0 +1,79 @@
+Hardware:
+=========
+Als Hardware-Plattform dient ein Standard MAPRDL Board mit folgenden Anschlüssen:
+
+Power 5V_CAM1: RFID Reader (Long Range) - RAGE: Jetzt Short Range??
+GND_CAM1     : RFID Reader Gnd
+
+Power 5V_CAM2: Waage mit Messverstärker Pin 18
+(in Wirklichkeit nicht 5V, sondern 11V)
+GND_CAM2     : Waage mit Messverstärker Pin 21
+
+SIGNAL_LB mit GND_LB gebrückt (immer aktiv)
+
+RX_RFID / TX_RFID: RFID-Reader
+
+Die Kommunikation mit dem Messverstärker erfolgt seriell.  Hierzu ist Rx+ und
+Tx+ des Messverstärkers mit Rx und Tx von UART0 verbunden.  Eigentlich ist der
+Messverstärker nur für RS422 und RS485 Kommunikation ausgelegt, welche
+DIFFERENZIELLE Signale verwenden!  Baudrate ist 9600-8N1.
+Tx (PE10) SERVO_ZU    : Pin 23 (Rx) des Messverstärkers (Waage)
+Rx (PE11) SCHALTER_AUF: Pin 26 (Tx) des Messverstärkers (Waage)
+
+
+Schaltrelais Kanal 0 (Pin 11) des Messverstärkers, Pin 14 ist "Common" und kann
+an Masse gelegt werden.  Verwendung ist unklar!
+PD7 SIGNAL_PIR2 : Pin 11 (Ch0) des Messverstärkers (Waage)
+PD6 SIGNAL_PIR1 : Pin 14 (Com) des Messverstärkers (Waage)
+
+
+MOMO_Booter:
+============
+Der original MAPRDL Booter erwartet ein Image "MAPRDL.UPD" und kann daher nicht
+zwischen einer Standard-Platform und der MOMO-Waage unterscheiden.
+Daher wurde ein eigener MOMO_Booter generiert, welche explizit das Update-File
+"MOMO.UPD" erwartet.  Dies geschieht mittels der Zuweisung PLATFORM=MOMO beim
+Aufruf des Makefiles wenn der Booter kompiliert wird.
+Dieses ruft den Compiler mit der Option -DPLATFORM=\"$(PLATFORM)\" auf, wodurch
+das Define PLATFORM im C-Code verfügbar ist und ausgewertet wird, also:
+    make PLATFORM=MOMO
+ruft den Compiler mit -DPLATFORM=\"$(PLATFORM)\" also -DPLATFORM="MOMO" auf.
+
+
+Messverstärker DAD 141.1:
+=========================
+- Der Messverstärker befindet sich nach dem Einschalten im Brutto-Modus, dadurch
+  wird KEIN auto-tare ausgeführt!
+- Um in den Netto-Modus zu gelangen, muss der ST-Befehl ausgeführt werden.
+  Dies gelingt jedoch nur, falls das Signal ruhig genug ist (zB. nicht bei
+  "Wind") ansonsten wird "ERR" zurückgegeben und man muss es erneut versuchen.
+- Der SA-Befehl (automatische Anzeige des Messergebnisses) wird beim ersten
+  Initialisieren zwar mit "OK" quittiert, jedoch ignoriert.  Daher ist es
+  nötig, ihn NACH dem ST-Befehl zu senden.
+- Eine Rückkehr der Messung auf den Wert 0 (Vogel fliegt weg) wird vom Mess-
+  verstärker NICHT (als neuer Wert) übermittelt!  Der Zeitpunkt des Wegfliegens
+  kann daher auf diesem Wege nicht ermittelt werden.
+
+Mögliche Probleme in der Praxis:
+- Falls die Wagge, bedingt durch Wind, ständig andere Werte anzeigt, so wird
+  kein auto-tare durchgeführt.
+- Ebenso kann in diesem Fall kein stabiler Messwert ermittelt werden, so dass
+  evtl. gar kein Gewicht angezeigt wird.
+- Es wurde beobachtet, dass auch sehr kleine Messungen (ca. 1g) angezeigt werden
+  obwohl der Triggerwert (TL) für eine Messung bei 25g liegt.
+
+
+Software:
+=========
+Die MOMO Software bassiert auf den Projekten MAPRDL und TAMDL um den neuesten
+Stand der verschiedenen Module zu verwenden.
+- Alarmzeiten (ON/OFF times) müssen im File CONFIG.TXT immer in "Normalzeit"
+  (MEZ) angegeben werden.  Sie werden bei einem Wechsel in die Sommerzeit
+  (Daylight Saving Time, MESZ) umgerechnet.
+- Es werden keine Alarmzeiten geschalten, solange keine gültige DCF77-Zeit
+  vorhanden ist.  Beim ersten Empfang der gültigen Zeit werden alle Alarm-
+  zeiten geprüft, ob sie zu diesem Zeitpunkt aktiv sind und gegebenenfalls
+  eingeschalten, siehe Funktion CheckAlarmTimes().  Nach dem Einlesen einer
+  neuen CONFIG.TXT Datei, erfolgt dies ebenso.
+- Der RFID Reader und die Waage werden immer zusammen ein- und ausgeschalten,
+  es gibt keine getrennten Alarmzeiten.
