@@ -33,7 +33,7 @@ as well as in laboratory settings
 - Hyperterminal Output, to get real-time data.
 - Low-Power Device: 
 
-![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_Prototyp_Feeder.jpg)
+![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_weigh_cell_rfid.JPG)
 
 Prototype: Weigh cell on Feeder
 
