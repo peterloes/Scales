@@ -31,7 +31,6 @@ as well as in laboratory settings
 - Forecast Battery-Change
 - Energy Bypass, don't lose Date and Time when changing battery
 - Hyperterminal Output, to get real-time data.
-- Low-Power Device: 
 
 ![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_weigh_cell_rfid.JPG)
 
