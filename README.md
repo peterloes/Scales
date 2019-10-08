@@ -19,7 +19,7 @@ as well as in laboratory settings
 
 -	Compatible with different RFID systems and triggers
 -	Low power consumption and specific data collection lead to long lasting collection periods
--	Applicable world-wide due to its compatibility with different types of radio clock receivers
+-	Applicable world-wide due to its compatibility with different types of radio clock receivers 
 -	High observation quality through low disturbance of the animals
 -	Data-transfer to external devices, such as personal computers
  
@@ -28,14 +28,10 @@ as well as in laboratory settings
 
 - Time Synchronization with atomic clock once a day to ensure optimal data quality
 - Application Current Control twice a day
-- Forecast for Battery-Change implemented
+- FForecast for Battery-Change implemented
 - Energy Bypass so that Date and Time are maintained even when changing battery
 - Hyperterminal Output to get real-time data in the field
 
 ![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_weigh_cell_rfid.JPG)
 
 Prototype: Weigh cell on Feeder
-
-The Scales features EFM32 ...the world´s most energy friendly microcontrollers
-
-ARM Cortex-M3 EFM32G230F128
