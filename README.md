@@ -28,7 +28,7 @@ as well as in laboratory settings
 
 - Time Synchronization with atomic clock once a day to ensure optimal data quality
 - Application Current Control twice a day
-- FForecast for Battery-Change implemented
+- Forecast for Battery-Change implemented
 - Energy Bypass so that Date and Time are maintained even when changing battery
 - Hyperterminal Output to get real-time data in the field
 
