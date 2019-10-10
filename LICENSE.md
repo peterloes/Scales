@@ -9,7 +9,7 @@ MPSL licensed Software is licensed free of charge (Freeware) for non-commercial 
 The licensed Software / Product:
 We grant the above rights to Mr Loës, provided that the following conditions are met.
 
-Short description of the software: Multifunctional Mainboard to Observe and Manipulate Organisms (MOMO) with Scale
+Short description of the software: Multifunctional Mainboard to Observe and Manipulate Organisms (MOMO) with Scales
 
 For further discription of the software are provided as source code (via download /git / etc.)
 Software is made available for download from the https://github.com/peterloes/ , https://github.com/mpio-be .
@@ -56,4 +56,3 @@ This Complimentary Science Software License Agreement is effective while you use
 
 Final Provisions:
 By using our software products you are automatically agreeing to and show that you have read and understood the terms and conditions. MPSL shall be governed by the laws of the Federal Republic of Germany except for the UN Sales Convention.
-
