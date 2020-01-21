@@ -35,3 +35,5 @@ as well as in laboratory settings
 ![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_weigh_cell_rfid.JPG)
 
 Prototype: Weigh cell on Feeder
+
+Mainboard: https://github.com/peterloes/MOMO
