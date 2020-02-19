@@ -191,7 +191,7 @@ all:      debug
 debug:    CFLAGS += -DDEBUG -DDEBUG_EFM -Os -g
 debug:    $(EXE_DIR)/$(PROJECTNAME).UPD
 
-release:  CFLAGS += -DNDEBUG -Os -g 
+release:  CFLAGS += -DNDEBUG -Os -g
 release:  $(EXE_DIR)/$(PROJECTNAME).UPD
 
 # rule when to update version file
