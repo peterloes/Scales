@@ -393,7 +393,7 @@ void LEUART_IRQHandler(void)
 {
 uint32_t leuartif, len;
 
-    /* Store and reset pending interupts */
+    /* Store and reset pending interrupts */
     leuartif = LEUART_IntGet(LEUART);
     LEUART_IntClear(LEUART, leuartif);
 
