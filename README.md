@@ -38,6 +38,6 @@ Prototype: Weigh cell on Feeder
 
 https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_poster_overview.pdf
 
-Mainboard
+Mainboard:
 
 https://github.com/peterloes/MOMO
