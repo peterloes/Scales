@@ -4,7 +4,7 @@
 Application for Animal Observation
 
 Supported:
-- Fa.Soemer / Amplifier DAD_141.1 and weigh cells 
+- Amplifier DAD_141.1 and weigh cells / Fa.Soemer
 
 
 The Scales is used to measure the weight of the bird.  It is switched ON or
