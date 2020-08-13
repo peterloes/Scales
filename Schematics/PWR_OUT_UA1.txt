@@ -1,0 +1,8 @@
+VDD_5V_CAM1 replace resistor R54 
+
+Output@  R54 
+  3.5V@  33K
+  5V  @  54K
+  9V  @ 104K
+ 11V  @ 120K 
+
