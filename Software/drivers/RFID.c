@@ -223,6 +223,7 @@ void	RFID_Init (void)
     /* Check if RFID reader is already in use */
     if (l_flgRFID_Activate)
 	RFID_PowerOff();	// power-off and reset reader and UART
+     	l_flgRFID_IsOn = false;
 
     /* Now the RFID reader isn't active any more */
     l_flgRFID_Activate = false;
