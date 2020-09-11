@@ -42,6 +42,10 @@ Raw data:
 
 https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/6_rawdata_BOX0999.TXT
 
+Configuration data:
+
+https://github.com/peterloes/Scales/blob/master/Software/CONFIG.TXT
+
 Mainboard:
 
 https://github.com/peterloes/MOMO
