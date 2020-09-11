@@ -1,6 +1,19 @@
 MOMO (Multifunctional Mainboard to Observe and Manipulate Organisms) 
 is an application to automate the recording and manipulation of animal behavior.
 
+Version 1.3
+- Added support for battery controller TI bq40z50.
+  LogBatteryInfo: Removed SBS_ManufacturerData.
+  Display SBS_RunTimeToEmpty in days/hours/min.
+  Display SBS_SerialNumber as hex value.
+- CheckAlarmTime to call the respective alarm action if the current time match the alarm time.
+  There is only alarm time, ON_TIME_1/ OFF_TIME_1 --> Alarm 1 (08:30 - 16:00) is ON. 
+  Reading the configuration file CONFIG.TXT from the SD-Card and set-up alarm action.
+- Corrected decoding of Short-Range(SR) RFID Reader transponder ID.
+- Implemented new feature "Absence Detection" which reports when a transponder is no more detected.
+- When the "Absence Detection" is configured, disabling the RFID reader is deferred as long as a transponder is still present.
+
+
 This application consists of the following modules:
  - main.c - Initialization code and main execution loop.
  - DMA_ControlBlock.c - Control structures for the DMA channels.
