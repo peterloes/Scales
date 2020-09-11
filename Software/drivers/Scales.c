@@ -1,7 +1,7 @@
 /***************************************************************************//**
  * @file
  * @brief	SCALES
- * @author	Peter Loës
+ * @author	Peter Loes
  * @version	2019-06-04
  *
  * This module provides the functionality to communicate with the SCALES.

@@ -2,7 +2,7 @@
  * @file
  * @brief	Battery Monitoring
  * @author	Ralf Gerhauser
- * @version	2020-01-22
+ * @version	2020-06-18
  *
  * This module periodically reads status information from the battery pack
  * via its SMBus interface.  It also provides routines to access the registers
@@ -23,6 +23,8 @@
  *
  ****************************************************************************//*
 Revision History:
+2020-06-18,rage LogBatteryInfo: Removed SBS_ManufacturerData.
+		Disabled workaround for probing prototype battery packs.
 2020-01-22,rage	Added support for battery controller TI bq40z50.
 2018-03-25,rage	Set interrupt priority for SMB_IRQn.
 		Added BatteryInfoReq() and BatteryInfoGet().
@@ -84,8 +86,9 @@ typedef struct
 
     /*!@brief Format identifiers.
      *
-     * These enumerations specify various data formats.  They are handled by a
-     * switch() statement in ItemDataString().
+     * These enumerations specify various data formats.  They are used as an
+     * element in structure @ref ITEM to specify the data representation of
+     * an item.  They are handled by a switch() statement in ItemDataString().
      */
 typedef enum
 {
@@ -297,9 +300,9 @@ int	status;
     g_BatteryCtrlName = l_ProbeList[i].name;
     g_BatteryCtrlType = l_ProbeList[i].type;
 
-#if 1
+#if 0
     /*
-     * RAGE WORKAROUND: There may be some Battery Packs with the new TI
+     * WORKAROUND: There may be some Battery Packs with the new TI
      * controller out in the field, that use I2C-bus address 0x0A.  These
      * would be detected as "Atmel" devices, which is wrong.
      * Therefore this workaround probes for register SBS_TurboPower (0x59)
@@ -778,10 +781,6 @@ uint32_t value;		// unsigned data variable
 
 	Log ("Battery Manufacturer Name : %s",
 	     ItemDataString(SBS_ManufacturerName, FRMT_STRING));
-
-	Log ("Battery Manufacturer Data : %s",
-	     ItemDataString(SBS_ManufacturerData,
-			g_BatteryCtrlType==BCT_TI ? FRMT_HEXDUMP:FRMT_STRING));
 
 	Log ("Battery Device Name       : %s",
 	     ItemDataString(SBS_DeviceName, FRMT_STRING));

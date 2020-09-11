@@ -2,7 +2,7 @@
  * @file
  * @brief	Alarm Clock Module
  * @author	Ralf Gerhauser
- * @version	2019-05-19
+ * @version	2020-05-12
  *
  * This module implements an Alarm Clock.  It uses the Real Time Counter (RTC)
  * for this purpose.  The main features are:
@@ -32,10 +32,12 @@
  *
  ****************************************************************************//*
 Revision History:
-2019-05-19,rage	- Implemented CheckAlarmTimes() to call the respective alarm
-		  action if the current time matches the alarm time.
-2018-11-13,rage	- RTC_IRQHandler: First handle alarm times, then the timers.
-		- sTimerStart: count seconds + 1 to ensure a minimum of 1s.
+2020-06-20,rage	CheckAlarmTimes: Also consider to switch off power outputs.
+2020-05-12,rage	Implemented CheckAlarmTimes() to call the respective alarm
+		action if the current time matches the alarm time.
+2018-10-10,rage	RTC_IRQHandler: First handle alarm times, then the timers,
+		otherwise IntervalPowerControl() may switch a power output on
+		and AlarmPowerControl() off again some milliseconds later.
 2018-03-24,rage	Set interrupt priority for RTC_IRQn.
 		Simplified msDelay(), added msDelayStart() and msDelayIsDone().
 		Removed INT locking in ClockUpdate().
@@ -291,7 +293,7 @@ int		i;			// index variable
  * @brief	Check Alarm Times if actions are required
  *
  * This routine checks ON_TIME_1~5 and OFF_TIME_1~5 if the current time
- * satisfies to turn devices on.  It must be called <b>after</b> a new
+ * satisfies to turn devices on or off.  It must be called <b>after</b> a new
  * configuration has been loaded and all initialization routines have been
  * executed.
  *
@@ -319,14 +321,19 @@ int8_t	on_hour, on_min, off_hour, off_min;
 	if (AlarmIsEnabled(alarm_on) == false)
 	    continue;		// skip alarms which are disabled
 
-	/* Get current time */
-	time = g_CurrDateTime.tm_hour * 60 + g_CurrDateTime.tm_min;
-#ifdef LOGGING
-	if (i == 0)
-	    Log ("Checking alarm times against current time %02d:%02d",
-		 g_CurrDateTime.tm_hour, g_CurrDateTime.tm_min);
-#endif
+	/* Be sure functions have been defined */
+	if ((l_Alarm[alarm_on].Function == NULL)
+	||  (l_Alarm[alarm_off].Function == NULL))
+	    continue;		// skip these alarms
 
+    /* Get current time */
+    time = g_CurrDateTime.tm_hour * 60 + g_CurrDateTime.tm_min;
+#ifdef LOGGING
+    if (i == 0)
+    Log ("Checking alarm times against current time %02d:%02d",
+	 g_CurrDateTime.tm_hour, g_CurrDateTime.tm_min);
+#endif
+        
 	/* Get alarm times */
 	AlarmGet(alarm_on, &on_hour,  &on_min);
 	on_time = on_hour * 60 + on_min;
@@ -350,14 +357,20 @@ int8_t	on_hour, on_min, off_hour, off_min;
 	if (on_time <= time  &&  time < off_time)
 	{
 	    /* Yes, alarm is currently active */
-	    if (AlarmIsEnabled(alarm_on)  &&  l_Alarm[alarm_on].Function)
-	    {
 #ifdef LOGGING
-		Log ("- Alarm %d (%02d:%02d - %02d:%02d) is activated",
-		     i+1, on_hour, on_min, off_hour, off_min);
+	    Log ("- Alarm %d (%02d:%02d - %02d:%02d) is ON",
+		 i+1, on_hour, on_min, off_hour, off_min);
 #endif
-		l_Alarm[alarm_on].Function (alarm_on);
-	    }
+	    l_Alarm[alarm_on].Function (alarm_on);
+	}
+	else
+	{
+	    /* No, alarm is currently inactive */
+#ifdef LOGGING
+	    Log ("- Alarm %d (%02d:%02d - %02d:%02d) is off",
+		 i+1, on_hour, on_min, off_hour, off_min);
+#endif
+	    l_Alarm[alarm_off].Function (alarm_off);
 	}
     } // for (i = 0;  i < NUM_POWER_ALARMS;  i++)
 }
