@@ -1,7 +1,7 @@
 /***************************************************************************//**
  * @file
  * @brief	MOMO
- * @author	Peter Loës
+ * @author	Peter Loes
  * @author	Ralf Gerhauser
  * @version	2019-05-24
  *
@@ -60,6 +60,7 @@
  *
  ****************************************************************************//*
 Revision History:
+2020-05-12,rage	Call CheckAlarmTimes() after CONFIG.TXT has been read.
 2019-06-20,rage	- Moved DMA related variables to module "DMA_ControlBlock.c".
 		- Report available memory (debug version only).
 2019-05-24,rage	- Used basic logic from project TAMDL.
