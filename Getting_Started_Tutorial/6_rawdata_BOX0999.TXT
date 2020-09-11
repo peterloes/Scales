@@ -1,0 +1,195 @@
+00000000-000000.000 MOMO V1.1 (Jul 17 2019 06:41:59)
+00000000-000000.000 Using HFXO Clock at 32.000MHz
+00000000-000000.000 DCF77: Enabled
+00000000-000000.000 Power-Fail: Received interrupt (POWER GOOD)
+00000000-000000.000 SD-Card Inserted
+00000000-000000.000 SD-Card Initialized
+00000000-000000.000 SD-Card File System mounted
+00000000-000000.000 SD-Card 1885MB free
+00000000-000000.000 Using Filename BOX0465.TXT
+00000000-000000.000 MCU: EFM32G230F128 HW-ID: 0x24F8A30856B3C2B8
+00000000-000000.000 ERROR Battery Controller Read Error
+00000000-000000.000 Reading Configuration File CONFIG.TXT
+20140101-120001.674 Initializing RFID reader of type SR for Power Output UA1
+20140101-120001.675 RFID reader Absent Detection is configured for 5s
+20140101-120001.675 Initializing Scales for Power Output UA2
+20140101-120001.675 Scales auto-tare uses a Tare Window TW of 20g and a Tare Interval TI of 2000ms
+20140101-120001.676 Scales Nominal silence (Ruhe) value NR for measurement is 15g
+20140101-120001.677 Scales Nominal silence Time NT for measurement is 500ms
+20140101-120001.677 Scales Trigger Level TL for measurement is 25g
+20140101-120001.677 Scales mean value calculation uses a Start Delay SD of 100ms and a Measure Time MT of 600ms
+20140101-120124.523 DCF77: Time Frame 1 is 20190729-124000
+20140101-120224.524 DCF77: Time Frame 2 is 20190729-124100
+20190729-124100.525 DCF77: Time Synchronization 12:41:00 (MESZ)
+20190729-124100.526 DCF77: Changing time zone from MEZ to MESZ
+20190729-124100.528 Initial Time Synchronisation
+20190729-124100.529 Checking alarm times against current time 12:41
+20190729-124100.530 - Alarm 1 (06:30 - 23:50) is activated
+20190729-124100.531 DCF77: Disabled
+20190729-124100.001 RFID is powered ON
+20190729-124100.001 Power Output UA1 enabled
+20190729-124100.002 Scales is powered ON
+20190729-124100.002 Power Output UA2 enabled
+20190729-124100.002 Waiting 15s for Scales being ready to accept commands...
+20190729-124116.000 Scales should be ready, retrieving hard- and software information
+20190729-124116.011 Scales Hardware Type    : 1410
+20190729-124116.051 Scales Hardware Version : 14100101
+20190729-124116.062 Scales Firmware Version : 0117
+20190729-124116.077 Scales Serial Number    : 00233579
+20190729-124116.163 Scales is operational now
+20190729-141807.944 Scales Weight: +00019.4
+20190729-144249.830 Scales Weight: +00007.6
+20190729-144256.344 Scales Weight: +00019.1
+20190729-152940.224 Scales Weight: +00025.0
+20190729-235000.000 Power Output UA1 disabled
+20190729-235000.000 RFID is powered off
+20190729-235000.000 Power Output UA2 disabled
+20190729-235000.001 Scales is powered off
+20190730-000000.014 Battery Remaining Capacity: 5285mAh
+20190730-000000.020 Battery Runtime to empty  : More than 6 weeks
+20190730-000000.027 Battery Actual Voltage    : 13.2V
+20190730-000000.034 Battery Actual Current    :    0mA
+20190730-025500.000 DCF77: Enabled
+20190730-025659.811 DCF77: Time Frame 1 is 20190730-025700
+20190730-025759.811 DCF77: Time Frame 2 is 20190730-025800
+20190730-025800.813 DCF77: Time Synchronization 02:58:00 (MESZ)
+20190730-025800.814 DCF77: Disabled
+20190730-063000.000 RFID is powered ON
+20190730-063000.001 Power Output UA1 enabled
+20190730-063000.001 Scales is powered ON
+20190730-063000.001 Power Output UA2 enabled
+20190730-063000.002 Waiting 15s for Scales being ready to accept commands...
+20190730-063016.000 Scales should be ready, sending configuration values
+20190730-063016.085 Scales is operational now
+20190730-084440.713 Scales Weight: +00024.3
+20190730-100724.285 Scales Weight: +00001.5
+20190730-100728.277 Scales Weight: +00028.4
+20190730-101125.909 Scales Weight: +00024.6
+20190730-110008.500 Scales Weight: +00032.9
+20190730-112034.055 Scales Weight: +00042.0
+20190730-115215.525 Scales Weight: +00029.9
+20190730-120000.013 Battery Remaining Capacity: 4369mAh
+20190730-120000.021 Battery Runtime to empty  : 2647min (1d)
+20190730-120000.028 Battery Actual Voltage    : 13.2V
+20190730-120000.035 Battery Actual Current    :   99mA
+20190730-133557.430 Scales Weight: +00024.7
+20190730-134713.555 Scales Weight: +00022.6
+20190730-145118.096 Scales Weight: +00029.1
+20190730-151628.137 Scales Weight: +00022.9
+20190730-153154.920 Scales Weight: +00031.2
+20190730-235000.000 Power Output UA1 disabled
+20190730-235000.000 RFID is powered off
+20190730-235000.000 Power Output UA2 disabled
+20190730-235000.001 Scales is powered off
+20190731-000000.014 Battery Remaining Capacity: 3207mAh
+20190731-000000.021 Battery Runtime to empty  : More than 6 weeks
+20190731-000000.028 Battery Actual Voltage    : 13.1V
+20190731-000000.035 Battery Actual Current    :    0mA
+20190731-025500.000 DCF77: Enabled
+20190731-025659.694 DCF77: Time Frame 1 is 20190731-025700
+20190731-025759.694 DCF77: Time Frame 2 is 20190731-025800
+20190731-025800.695 DCF77: Time Synchronization 02:58:00 (MESZ)
+20190731-025800.696 DCF77: Disabled
+20190731-063000.000 RFID is powered ON
+20190731-063000.001 Power Output UA1 enabled
+20190731-063000.001 Scales is powered ON
+20190731-063000.001 Power Output UA2 enabled
+20190731-063000.002 Waiting 15s for Scales being ready to accept commands...
+20190731-063016.000 Scales should be ready, sending configuration values
+20190731-063016.085 Scales is operational now
+20190731-075705.775 Scales Weight: +00023.8
+20190731-080755.426 Scales Weight: +00022.2
+20190731-082756.819 Scales Weight: +00025.0
+20190731-084213.425 Scales Weight: +00028.1
+20190731-085444.978 Scales Weight: +00020.1
+20190731-090540.723 Scales Weight: +00019.6
+20190731-090925.537 Scales Weight: +00025.4
+20190731-092329.748 Scales Weight: +00022.9
+20190731-100832.777 Scales Weight: +00022.3
+20190731-104444.234 Scales Weight: +00018.8
+20190731-110204.895 Scales Weight: +00026.6
+20190731-120000.016 Battery Remaining Capacity: 2771mAh
+20190731-120000.025 Battery Runtime to empty  : 1662min (1d)
+20190731-120000.032 Battery Actual Voltage    : 13.1V
+20190731-120000.039 Battery Actual Current    :  100mA
+20190731-124148.747 Scales Weight: +00051.5
+20190731-124818.286 Scales Weight: +00023.4
+20190731-131916.263 Scales Weight: +00026.7
+20190731-132611.225 Scales Weight: +00021.7
+20190731-151457.784 Scales Weight: +00034.9
+20190731-154751.110 Scales Weight: +00027.0
+20190731-235000.000 Power Output UA1 disabled
+20190731-235000.000 RFID is powered off
+20190731-235000.000 Power Output UA2 disabled
+20190731-235000.001 Scales is powered off
+20190801-000000.013 Battery Remaining Capacity: 1605mAh
+20190801-000000.020 Battery Runtime to empty  : More than 6 weeks
+20190801-000000.027 Battery Actual Voltage    : 13.0V
+20190801-000000.034 Battery Actual Current    :    0mA
+20190801-025500.000 DCF77: Enabled
+20190801-025659.695 DCF77: Time Frame 1 is 20190801-025700
+20190801-025759.695 DCF77: Time Frame 2 is 20190801-025800
+20190801-025800.696 DCF77: Time Synchronization 02:58:00 (MESZ)
+20190801-025800.698 DCF77: Disabled
+20190801-063000.000 RFID is powered ON
+20190801-063000.001 Power Output UA1 enabled
+20190801-063000.001 Scales is powered ON
+20190801-063000.001 Power Output UA2 enabled
+20190801-063000.002 Waiting 15s for Scales being ready to accept commands...
+20190801-063016.000 Scales should be ready, sending configuration values
+20190801-063016.086 Scales is operational now
+20190801-083845.211 Scales Weight: +00024.6
+20190801-091334.516 Scales Weight: +00025.7
+20190801-093611.389 Scales Weight: +00019.8
+20190801-095557.444 Scales Weight: +00022.4
+20190801-102701.095 Scales Weight: +00021.5
+20190801-103429.673 Scales Weight: +00065.9
+20190801-105403.332 Scales Weight: +00028.6
+20190801-114851.510 Scales Weight: +00021.7
+20190801-120000.013 Battery Remaining Capacity: 2258mAh
+20190801-120000.021 Battery Runtime to empty  : 1341min (0d)
+20190801-120000.028 Battery Actual Voltage    : 12.9V
+20190801-120000.035 Battery Actual Current    :  101mA
+20190801-130208.423 Scales Weight: +00024.6
+20190801-135755.851 Scales Weight: +00023.8
+20190801-151641.372 Scales Weight: +00026.2
+20190801-151836.721 Scales Weight: +00027.9
+20190801-152918.598 Scales Weight: +00032.5
+20190801-235000.000 Power Output UA1 disabled
+20190801-235000.000 RFID is powered off
+20190801-235000.000 Power Output UA2 disabled
+20190801-235000.001 Scales is powered off
+20190802-000000.014 Battery Remaining Capacity: 1073mAh
+20190802-000000.021 Battery Runtime to empty  : More than 6 weeks
+20190802-000000.028 Battery Actual Voltage    : 12.7V
+20190802-000000.035 Battery Actual Current    :    0mA
+20190802-025500.000 DCF77: Enabled
+20190802-025659.697 DCF77: Time Frame 1 is 20190802-025700
+20190802-025759.695 DCF77: Time Frame 2 is 20190802-025800
+20190802-025800.696 DCF77: Time Synchronization 02:58:00 (MESZ)
+20190802-025800.698 DCF77: Disabled
+20190802-063000.000 RFID is powered ON
+20190802-063000.001 Power Output UA1 enabled
+20190802-063000.001 Scales is powered ON
+20190802-063000.001 Power Output UA2 enabled
+20190802-063000.002 Waiting 15s for Scales being ready to accept commands...
+20190802-063016.000 Scales should be ready, sending configuration values
+20190802-063016.086 Scales is operational now
+20190802-080124.207 Scales Weight: +00022.9
+20190802-081800.114 Scales Weight: +00022.6
+20190802-082725.092 Scales Weight: +00019.7
+20190802-083445.897 Scales Weight: +00024.2
+20190802-084507.814 Scales Weight: +00023.2
+20190802-084625.764 Scales Weight: +00019.3
+20190802-101839.775 Scales Weight: +00022.0
+20190802-102656.469 Scales Weight: +00027.2
+20190802-103205.746 Scales Weight: +00028.7
+20190802-103854.825 Scales Weight: +00022.6
+20190802-104018.658 Scales Weight: +00019.5
+20190802-120000.012 Battery Remaining Capacity: 525mAh
+20190802-120000.021 Battery Runtime to empty  : 300min (0d)
+20190802-120000.028 Battery Actual Voltage    : 12.5V
+20190802-120000.035 Battery Actual Current    :  105mA
+20190802-121631.352 Scales Weight: +00027.6
+20190802-122016.167 Scales Weight: +00020.6
+20190802-131611.578 Scales Weight: +00021.8
