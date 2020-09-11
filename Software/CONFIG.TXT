@@ -1,4 +1,4 @@
-# Configuration file for MOMO (a scales application)
+﻿# Configuration file for MOMO (a scales application)
 #
 # Revision History
 # 2019-06-02,rage   Configured Scales parameters.
@@ -14,12 +14,15 @@
 
 # Configuration Variables in config.txt:
 
+
 # RFID_TYPE [SR, LR]
 #   RFID reader device type: SR is Short Range reader, LR is Long Range reader.
 #   If no type is specified (i.e. the variable is #-commented), the associated
 #   logic will not be activated.
 
 # RFID_POWER [UA1, UA2]
+
+
 #   RFID reader power source, must be set to UA1 or UA2.
 #   If no value is specified (i.e. the variable is #-commented), the associated
 #   logic will not be activated.
@@ -27,6 +30,7 @@
 # RFID_ABSENT_DETECT_TIMEOUT [s]
 #   An RFID reader regularly re-sends the ID, as long as the transponder can be
 #   received.  This is used to retrigger a "still present" timer.  The value
+
 #   specifies the time in seconds, after which the transponder is treated as
 #   "absent" when its ID could not be received again.
 #   A value of 0 disables the absent logic.  This is useful for "fly thru"
@@ -46,24 +50,26 @@
 #        not exceed ±TW/2.
 #   TI - Tare Interval: Duration in [ms] to build a new tare value.
 #   NR - Nominal silence (Ruhe): Value in [g] measurement must be stable to be
-#	 valid.
+#   	 valid.
 #   NT - Nominal silence Time: Duration in [ms] measurement must be stable to
 #	 be valid.
 #   SD - Start Delay: Duration in [ms] before real measurement starts.
 #   MT - Measure Time: Duration in [ms] measuring is performed to build a mean
 #        value.
 #   TL - Trigger Level: Value in gram [g] the cyclic measurement must exceed to
-#        trigger a measurement that is reported.  See diagram in 10.13.6
+#        trigger a measurement that is reported.  See diagram in 10.13.6
 
-# ON_TIME_1~5, OFF_TIME_1~5 [hour:min] MEZ
-#   These variables determine the on and off times of the whole unit.
+# ON_TIME_1, OFF_TIME_1 [hour:min] MEZ
+#   These variable determine the on and off time of the whole unit.
+#   When it is in the off state, RFID Reader and Scale is switched off
+.
 
-    # RFID configuration
+# RFID configuration
 RFID_TYPE       = SR		# Short Range reader
 RFID_POWER      = UA1		# 5V output
 RFID_ABSENT_DETECT_TIMEOUT = 5
 
-    # SCALES configuration
+# SCALES configuration
 SCALES_POWER	= UA2		# 11V output
 SCALES_CFG_TW	= 20		# Tare Window [g], see 10.5.7
 SCALES_CFG_TI	= 2000		# Tare Interval [ms], see 10.5.8
@@ -73,6 +79,7 @@ SCALES_CFG_SD	= 100		# Start Delay [ms], see 10.13.1
 SCALES_CFG_MT	= 600		# Measure Time [ms], see 10.13.2
 SCALES_CFG_TL	= 25		# Trigger Level [g], see 10.13.6
 
-    # Operating times [hour:min] MEZ
-ON_TIME_1       = 05:30
-OFF_TIME_1      = 22:50
+
+# Operating time [hour:min] MEZ (MESZ-1)
+ON_TIME_1      = 07:30
+OFF_TIME_1     = 16:00
