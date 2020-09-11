@@ -38,7 +38,7 @@ Prototype: Weigh cell on Feeder
 
 https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_poster_overview.pdf
 
-rawdata:
+Rawdata:
 https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/6_rawdata_BOX0999.TXT
 
 Mainboard:
