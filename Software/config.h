@@ -222,15 +222,15 @@ typedef enum
     ALARM_BATTERY_MON_1,    //!< Time #1 for logging battery status
     ALARM_BATTERY_MON_2,    //!< Time #2 for logging battery status
     ALARM_ON_TIME_1,        //!< Time #1 when to switch the system ON
-    ALARM_ON_TIME_2,        //!< Time #2 when to switch the system ON
-    ALARM_ON_TIME_3,        //!< Time #3 when to switch the system ON
-    ALARM_ON_TIME_4,        //!< Time #4 when to switch the system ON
-    ALARM_ON_TIME_5,        //!< Time #5 when to switch the system ON
+    //ALARM_ON_TIME_2,        //!< Time #2 when to switch the system ON
+    //ALARM_ON_TIME_3,        //!< Time #3 when to switch the system ON
+    //ALARM_ON_TIME_4,        //!< Time #4 when to switch the system ON
+    //ALARM_ON_TIME_5,        //!< Time #5 when to switch the system ON
     ALARM_OFF_TIME_1,       //!< Time #1 when to switch te system OFF
-    ALARM_OFF_TIME_2,       //!< Time #2 when to switch te system OFF
-    ALARM_OFF_TIME_3,       //!< Time #3 when to switch te system OFF
-    ALARM_OFF_TIME_4,       //!< Time #4 when to switch te system OFF
-    ALARM_OFF_TIME_5,       //!< Time #5 when to switch te system OFF
+    //ALARM_OFF_TIME_2,       //!< Time #2 when to switch te system OFF
+    //ALARM_OFF_TIME_3,       //!< Time #3 when to switch te system OFF
+    //ALARM_OFF_TIME_4,       //!< Time #4 when to switch te system OFF
+    //ALARM_OFF_TIME_5,       //!< Time #5 when to switch te system OFF
     NUM_ALARM_IDS
 } ALARM_ID;
 
@@ -240,7 +240,7 @@ typedef enum
  */
 //@{
 #define FIRST_POWER_ALARM	ALARM_ON_TIME_1
-#define LAST_POWER_ALARM	ALARM_OFF_TIME_5
+#define LAST_POWER_ALARM	ALARM_OFF_TIME_1
 #define NUM_POWER_ALARMS	(LAST_POWER_ALARM - ALARM_OFF_TIME_1 + 1)
 //@}
 
