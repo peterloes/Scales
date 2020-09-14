@@ -57,7 +57,7 @@
  *
  ****************************************************************************//*
 Revision History:
-2019-05-19,rage	TimeSynchronize: Call ClockSet() after converting alarm times
+2020-05-12,rage	TimeSynchronize: Call ClockSet() after converting alarm times
 		from/to MESZ to provide correct alarms to CheckAlarmTimes().
 2016-04-06,rage	Made local variables of type "volatile".
 		BugFix: implicit MEZ to MESZ change during daylight saving time
