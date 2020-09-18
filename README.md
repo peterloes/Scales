@@ -49,3 +49,7 @@ https://github.com/peterloes/Scales/blob/master/Software/CONFIG.TXT
 Mainboard:
 
 https://github.com/peterloes/MOMO
+
+Supplier:
+
+https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/5_Supplier.txt
