@@ -50,6 +50,6 @@ Mainboard:
 
 https://github.com/peterloes/MOMO
 
-Supplier:
+Manufacture:
 
 https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/5_Supplier.txt
