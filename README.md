@@ -1,5 +1,7 @@
 ﻿# Scales
  designed with MOMO
+ 
+Authors: Loës P. (2021) [![DOI](https://zenodo.org/badge/210343724.svg)](https://zenodo.org/badge/latestdoi/210343724)
 
 Application for Animal Observation
 
