@@ -1,7 +1,7 @@
 ﻿# Scales
  designed with MOMO
  
-Author: Loës P., Kempenaers B.(2020)[![DOI](https://zenodo.org/badge/210343724.svg)](https://zenodo.org/badge/latestdoi/210343724)
+Author: Loës P., Kempenaers B.(2020) [![DOI](https://zenodo.org/badge/210343724.svg)](https://zenodo.org/badge/latestdoi/210343724)
 
 Application for Animal Observation
 
