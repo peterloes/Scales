@@ -1,5 +1,5 @@
 ﻿# Scales
- designed with MOMO
+ Configure your weighing system, designed with MOMO.
  
 Authors: Loës P., Kempenaers B.(2020) [![DOI](https://zenodo.org/badge/210343724.svg)](https://zenodo.org/badge/latestdoi/210343724)
 
