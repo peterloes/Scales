@@ -20,7 +20,7 @@ SCALES_POWER to select the power output.
 An efficient application to monitor and control animal behaviour in wildlife
 as well as in laboratory settings
 
--	Compatible with different RFID systems and triggers
+-	Compatible with different RFID systems
 -	Low power consumption and specific data collection lead to long lasting collection periods
 -	Applicable world-wide due to its compatibility with different types of radio clock receivers 
 -	High observation quality through low disturbance of the animals
