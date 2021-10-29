@@ -9,8 +9,9 @@ Supported:
 - Amplifier DAD141.1 and weigh cells / Hauch & Bach (Denmark)
 
 
-The Scales is used to measure the weight of the bird.  It is switched ON or
-OFF together with the RFID_Reader. Scales uses the amplifier DAD 141.1
+The automated Scale is used to measure the weight of different organisms (animals).
+The All-in-One DAD 141.1 is a universal device for any weighing, filling or loss-in-weight operation and for force measurements.
+It is switched ON or OFF together with the RFID_Reader. Scales uses the amplifier DAD 141.1
 which handles automatic tare and measurement. Amplifier and Scales are
 powered by one of the Power_Outputs, usually UA2. Use variable
 SCALES_POWER to select the power output.
