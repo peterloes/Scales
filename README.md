@@ -6,7 +6,7 @@ Authors: Loës P., Kempenaers B.(2020) [![DOI](https://zenodo.org/badge/21034372
 Application for Animal Observation
 
 Supported:
-- Amplifier DAD141.1 and weigh cells / Hauch & Bach (Dänemark)
+- Amplifier DAD141.1 and weigh cells / Hauch & Bach (Denmark)
 
 
 The Scales is used to measure the weight of the bird.  It is switched ON or
