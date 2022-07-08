@@ -3,7 +3,7 @@
  
 Authors: Loës P., Kempenaers B.(2020) [![DOI](https://zenodo.org/badge/210343724.svg)](https://zenodo.org/badge/latestdoi/210343724)
 
-Application for Animal Observation
+Application for animal observation
 
 Supported:
 - Amplifier DAD141.1 and weigh cells / Hauch & Bach (Denmark)
