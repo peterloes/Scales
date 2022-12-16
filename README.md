@@ -33,7 +33,7 @@ as well as in laboratory settings
 - Application Current Control twice a day
 - Forecast for Battery-Change implemented
 - Energy Bypass so that Date and Time are maintained even when changing battery
-- Hyperterminal Output to get real-time data in the field
+- Hyperterminal Output to get real-time data to the computer/laptop
 
 ![My image](https://github.com/peterloes/Scales/blob/master/Getting_Started_Tutorial/1_weigh_cell_rfid.JPG)
 
